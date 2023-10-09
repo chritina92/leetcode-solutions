@@ -6,6 +6,7 @@ class Solution(object):
         :type n: int
         :rtype: int
         """
+        # use dp array
         dp = [0] * (n + 1)
         dp[2] = 1
         for i in range(3, n+1):
