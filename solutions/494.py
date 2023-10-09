@@ -12,7 +12,7 @@ class Solution(object):
             return 0
         if (target+total_sum) % 2 == 1:
             return 0
-        target_sum = (target+total_sum) //2
+        target_sum = (target+total_sum) // 2
         dp = [[0] * (target_sum + 1) for _ in range(len(nums)+1)]
         dp[0][0] = 1
         for i in range(1, len(nums)+1):
